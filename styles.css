@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+html {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/bg-image.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #F2F2F2;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-areas:
+        "leftSidebar menu rightSidebar"
+        "leftSidebar content rightSidebar"
+        "leftSidebar footer rightSidebar";
+}
+
+.leftSidebar,
+.rightSidebar {
+    grid-row: 1 / span 3;
+}
+
+.rightSidebar {
+    grid-column: 3 / span 1;
+}
+
+.menu {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    border-bottom: #F2F2F2 1px solid;
+    justify-content: space-evenly;
+}
+
+.menu a {
+    font-family: 'Roboto Slab', serif;
+    color: #F2F2F2;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    text-decoration: none;
+    align-self: center;
+    position: relative;
+}
+
+.menu a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F2F2F2;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.menu a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.content {
+    place-self: center center;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.media {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer {
+    font-size: 0.7em;
+    border-top: #F2F2F2 1px solid;
+    display: flex;
+}
+
+.footer span {
+    flex-grow: 1;
+    text-align: center;
+    align-self: flex-end;
+    padding-bottom: 7px;
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 11px;
+    }
+}
