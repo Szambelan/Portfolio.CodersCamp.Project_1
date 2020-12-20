@@ -2,41 +2,224 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
-    <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
-
-    <!-- <meta charset="utf-8">
-    <title>Porfolio</title> -->
+    <title>Porfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="leftSidebar"></div>
-        <div class="menu">
-            <a href="#">HOME</a>
-            <a href="#">PROJECTS</a>
-            <a href="#">SKILLS</a>
-            <a href="#">CONTACT</a>
-        </div>
-        <div class="content">Hi there, <br>
-            I'm Paweł Szambelan
-            <div class="media">
-                <a href="#" title="LinkedIn"><img src="images/media/linkein.png"></a>
-                <a href="#" title="GitHub"><img src="images/media/github.png"></a>
-                <a href="#" title="Facebook"><img src="images/media/facebook.png"></a>
-                <a href="#" title="Instagram"><img src="images/media/instagram.png"></a>
+
+        <section class="menu">
+            <a href='#'>HOME</a>
+            <a href="#">ABOUT ME</a>
+            <a href='#'>PROJECTS</a>
+            <a href='#'>SKILLS</a>
+            <a href='#'>CONTACT</a>
+        </section>
+
+        <section class="home">
+            <div class="content">
+                <span>Hi there, <br>
+                    I'm Paweł Szambelan</span>
+                <div class="media">
+                    <a href="#" title="LinkedIn"><img src="images/media/linkedin.png"></a>
+                    <a href="#" title="GitHub"><img src="images/media/github.png"></a>
+                    <a href="#" title="Facebook"><img src="images/media/facebook.png"></a>
+                    <a href="#" title="Instagram"><img src="images/media/instagram.png"></a>
+                </div>
             </div>
-        </div>
-        <div class="footer">
-            <span>
+        </section>
+
+        <section class="about-me">
+            <div class="image">
+                <img src="images/aboutMeFoto.jpg">
+            </div>
+            <div class="line"></div>
+            <div class="text">
+                <h1>About me</h1>
+                <p>I am a young guy with lots of energy who love doing many things
+                    in one time. For sure I cannot stand sitting in one place and do
+                    nothing – always I am trying to find something exciting!
+                    I would like to find a job, which will help me to develop myself in
+                    IT sector.
+                </p>
+                <input type="button" class="btn" value="Download my CV" />
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="text">Let's get know
+                my skills...
+            </div>
+            <div class="skills-container">
+
+                <div class="item">
+                    <div class="item-side item-front">
+                        <span>CSS</span>
+                    </div>
+                    <div class="item-side item-back">
+                        <img class src="images/icons/css.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-side item-front">
+                        <span>HTML</span>
+                    </div>
+                    <div class="item-side item-back">
+                        <img class src="images/icons/html.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-side item-front">
+                        <span>GIT</span>
+                    </div>
+                    <div class="item-side item-back">
+                        <img class src="images/icons/git.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-side item-front">
+                        <span>JAVASCRIPT</span>
+                    </div>
+                    <div class="item-side item-back">
+                        <img class src="images/icons/javascript.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-side item-front">
+                        <span>TYPESCRIPT</span>
+                    </div>
+                    <div class="item-side item-back">
+                        <img class src="images/icons/typescript.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-side item-front">
+                        <span>ANGULAR</span>
+                    </div>
+                    <div class="item-side item-back">
+                        <img class src="images/icons/angular.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-side item-front">
+                        <span>NODE.JS</span>
+                    </div>
+                    <div class="item-side item-back">
+                        <img class src="images/icons/nodejs.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-side item-front">
+                        <span>MONGODB</span>
+                    </div>
+                    <div class="item-side item-back">
+                        <img class src="images/icons/mongodb.png">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="projects">
+
+            <div class="projects-grid">
+
+                <input type="radio" name="project" id="project-1" checked />
+                <input type="radio" name="project" id="project-2" />
+
+                <div class="projects-list">
+
+                    <div class="project">
+                        <div class="description">
+                            <h1>TripMate</h1>
+                            <p>Web application helping people
+                                to get from one place to another. </p>
+                            <a href="#" title="GitHub" class="project-github"><img src="images/project-github.png"></a>
+                        </div>
+                        <div class="image image-top-right" style="background-image: url('images/TripMate/3.png');">
+                        </div>
+                        <div class="image image-bottom-left" style="background-image: url('images/TripMate/2.png');">
+                        </div>
+                        <div class="image image-bottom-right" style="background-image: url('images/TripMate/1.png');">
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="description">
+                            <h1>SportFreaks</h1>
+                            <p>Application helping sport schools with
+                                organising their employees and lessons schedule. </p>
+                            <a href="#" title="GitHub" class="project-github"><img src="images/project-github.png"></a>
+                        </div>
+                        <div class="image image-top-right" style="background-image: url('images/SportFreaks/1.png');">
+                        </div>
+                        <div class="image image-bottom-left" style="background-image: url('images/SportFreaks/2.png');">
+                        </div>
+                        <div class="image image-bottom-right"
+                            style="background-image: url('images/SportFreaks/3.png');"> </div>
+                    </div>
+
+                </div>
+
+                <div class="navigation">
+                    <label class="dot" for="project-1"></label>
+                    <label class="dot" for="project-2"></label>
+                </div>
+
+            </div>
+
+            <div class="text">...and have a look
+                at my projects
+            </div>
+
+        </section>
+
+        <section class="contact-me">
+
+            <h1>Get in touch with me!</h1>
+            <div class="container">
+                <div class="info">
+                    <div class="photo">
+                    </div>
+                    <br>
+                    <span class="text">Paweł Szambelan
+                        Wrocław, Poland</span>
+                    <span>+48 784 552 621
+                        p.szambelan1@gmail.com</span>
+                </div>
+                <form action="" class="form"> 
+                        <input type="text" class="form-input" placeholder="Name" autocomplete="off" required />
+                        <input type="text" class="form-input" placeholder="Your e-mail address" autocomplete="off" required />
+                        <input type="text" class="form-input" placeholder="Topic" autocomplete="off" required />
+                        <textarea class='form-textarea' rows=12 placeholder='Put your message here....'autocomplete="off" required ></textarea>
+                </form>
+            </div>
+            <input type="submit" class="btn" value="Send" />
+
+        </section>
+
+        <section class="footer"> 
+
+            <div>
                 Copyrights © 2020 Paweł Szambelan
-            </span>
-        </div>
-        <div class="rightSidebar"></div>
+            </div>
+
+        </section>
+
+
+
+
+
+
     </div>
 </body>
 
