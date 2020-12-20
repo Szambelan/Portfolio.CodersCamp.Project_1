@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 
 $main-font-color: #1E413F;
-$second-font-color:  #F2F2F2;
+$second-font-color: #F2F2F2;
 $background-color: #EEEEEE;
+
+$dot-active-color: #DA7789;
+
 
 body {
     font-family: 'Roboto Slab', serif;
     margin: 0;
     background-color: $background-color;
-    color:$main-font-color;
+    color: $main-font-color;
 }
 
 .container {
@@ -36,7 +39,7 @@ body {
     margin: 0 20px;
 
     a {
-        color:$main-font-color;
+        color: $main-font-color;
         font-size: 1.2em;
         text-decoration: none;
         position: relative;
@@ -146,7 +149,6 @@ body {
     .skills-container {
         flex-grow: 1;
         max-width: 70%;
-        /* TO ZMIENIĆ, ŻEBY BYŁO RESPONSYWNE */
         margin: 5% 3% 5% 0;
         display: grid;
         grid-template-columns: repeat(4, 25%);
@@ -201,11 +203,6 @@ body {
         }
     }
 }
-
-
-
-$fade-time: 400ms;
-$dot-active-color: #DA7789;
 
 
 .projects {
@@ -274,7 +271,7 @@ $dot-active-color: #DA7789;
                 left: 0;
                 right: 0;
                 opacity: 0;
-                transition: opacity $fade-time ease;
+                transition: opacity 400ms ease;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -395,13 +392,13 @@ $dot-active-color: #DA7789;
             flex-direction: column;
             justify-content: space-around;
 
-            .form-input, 
+            .form-input,
             .form-textarea {
                 box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                 background: $second-font-color;
                 border-radius: 15px;
                 border: none;
-                height: 40px;
+                flex-basis: 12%;
                 padding: 0 2%;
                 outline: none;
             }
@@ -409,7 +406,7 @@ $dot-active-color: #DA7789;
             .form-textarea {
                 padding-top: 10px;
                 padding-bottom: 10px;
-                height: 150px;
+                flex-basis: 40%;
                 display: inline-block;
                 resize: none;
             }
@@ -424,7 +421,7 @@ $dot-active-color: #DA7789;
 
     .btn {
         width: 20%;
-        height: 35px;
+        height: 8%;
         align-self: flex-end;
         margin-right: 2%;
     }
@@ -432,9 +429,9 @@ $dot-active-color: #DA7789;
 }
 
 .footer {
-   font-size: 0.7em; 
-   padding: 5px;
-   text-align: center;
+    font-size: 0.7em;
+    padding: 5px;
+    text-align: center;
 }
 
 
@@ -454,7 +451,9 @@ $dot-active-color: #DA7789;
     }
 }
 
-@media screen and (max-width: 1100px) {
+
+//phones
+@media screen and (max-width: 600px) {
     .about-me .image {
         width: auto;
     }
@@ -462,4 +461,82 @@ $dot-active-color: #DA7789;
     .about-me .text {
         max-width: 40%;
     }
+}
+
+
+//tablets
+@media screen and (max-width: 900px) {
+    .about-me .image {
+        width: auto;
+    }
+
+    .about-me .text {
+        max-width: 40%;
+    }
+}
+
+//desktop
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 85%;
+    }
+
+    .about-me .image {
+        width: auto;
+    }
+
+    .about-me .text {
+        max-width: 40%;
+    }
+
+    .skills {
+        width: 95%;
+
+        .text {
+            margin: 3% 6% 0 4%;
+
+        }
+
+        .skills-container {
+
+            .item .item-back img {
+                max-width: 60%;
+            }
+        }
+    }
+
+    .projects {
+        width: 95%;
+
+        .text {
+            margin: 1% 0 0 4%;
+        }
+    }
+
+    .contact-me {
+        width: 70%;
+
+        .container {
+
+            .info {
+
+                .text {
+                    font-size: 1.3em;
+                }
+
+                .photo {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+
+        .btn {
+            width: 16%;
+            height: 6%;
+        }
+
+    }
+
+
 }
