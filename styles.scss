@@ -228,7 +228,7 @@ body {
         max-width: 70%;
         margin: 5% 3% 5% 0;
         display: grid;
-        grid-template-columns: repeat(4, 25%);
+        grid-template-columns: repeat(4, 1fr);
         color: $second-font-color;
         font-size: 1.2em;
 
@@ -671,14 +671,38 @@ body {
 
 //phones
 @media screen and (max-width: 600px) {
+    body {
+        font-size: 75%;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: 11em;
+        gap: 8px;
+    }
+
+    .home .content {
+        font-size: 1.7em;
+
+        .media {
+            width: 80%;
+
+            img {
+                width: 25px;
+                height: auto;
+            }
+        }
+    }
 
     .about-me {
         flex-direction: column;
         margin: 5% 0;
+        height: 40em;
 
         .image {
             order: 3;
-            width: 25%;
+            width: 45%;
+            margin: 5% 0;
         }
 
         .line {
@@ -694,6 +718,75 @@ body {
             max-width: 80%;
             margin: auto;
             margin-bottom: 5%;
+        }
+    }
+
+    .skills {
+        height: 50em;
+
+        .skills-container {
+            grid-template-columns: repeat(2, 1fr);
+            padding-bottom: 10%;
+
+            .item .item-back img {
+                width: 40%;
+                height: auto;
+            }
+        }
+    }
+
+    .projects {
+        .text {
+            padding: 4%;
+        }
+
+        .projects-list .project .description a img {
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    .contact {
+        height: 55em;
+        position: relative;
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+            height: 58%;
+            padding: 0;
+            height: auto;
+
+            .info {
+                order: 2;
+                justify-content: center;
+                width: 100%;
+                min-height: 50%;
+            }
+
+            .form {
+                order: 1;
+                width: 90%;
+                margin: auto;
+                margin: 5% 0;
+
+                .form-input {
+                    height: 15%;
+                }
+
+                .form-input,
+                .form-textarea {
+                    margin: 5px 0;
+                }
+            }
+        }
+
+        .btn {
+            margin-right: 5%;
+            position: absolute;
+            top: 54%;
+            width: 18%;
+            height: 4%;
         }
     }
 }
