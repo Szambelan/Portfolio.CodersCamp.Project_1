@@ -73,8 +73,8 @@ body {
 }
 
 .home {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(images/bg-image.jpg) no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/bg-image.jpg) no-repeat center center fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../images/bg-image.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/bg-image.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 35em;
   overflow: hidden;
@@ -485,7 +485,7 @@ body {
 .contact .container .info .photo {
   width: 200px;
   height: 200px;
-  background-image: url("images/my-photo.png");
+  background-image: url("../images/my-photo.png");
   background-size: cover;
 }
 

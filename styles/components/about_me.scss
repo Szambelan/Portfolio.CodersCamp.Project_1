@@ -1,0 +1,36 @@
+.about-me {
+    margin: 3% 0;
+    height: 35em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .image {
+        width: 35%;
+        height: auto;
+        justify-content: center;
+        margin: 0 3%;
+        display: flex;
+        height: 70%;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .line {
+        width: 2px;
+        min-height: 80%;
+        border-left: $main-font-color 3px solid;
+        animation: appearing;
+        animation-duration: 2s;
+    }
+
+    .text {
+        max-width: 30%;
+        text-align: center;
+        margin-left: 5%;
+        font-size: 1.1em;
+    }
+}
