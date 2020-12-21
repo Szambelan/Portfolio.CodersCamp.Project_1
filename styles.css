@@ -123,7 +123,8 @@ body {
 }
 
 .about-me .image {
-  width: 25%;
+  width: 35%;
+  height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -562,8 +563,8 @@ body {
 }
 
 .contact .btn {
-  width: 20%;
-  height: 8%;
+  width: 18%;
+  height: 6%;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-right: 2%;
@@ -596,9 +597,6 @@ body {
 @media screen and (max-width: 1200px) {
   body {
     font-size: 85%;
-  }
-  .about-me .image {
-    width: auto;
   }
   .about-me .text {
     max-width: 40%;
@@ -637,6 +635,114 @@ body {
 @media screen and (max-width: 900px) {
   body {
     font-size: 80%;
+  }
+  .about-me .image {
+    height: auto;
+    margin: auto;
+  }
+  .about-me .line {
+    min-height: 70%;
+  }
+  .about-me .text {
+    max-width: 45%;
+    margin-right: 3%;
+  }
+  .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 95%;
+    height: 35em;
+  }
+  .skills .text {
+    margin: 0;
+    padding: 4%;
+    white-space: normal;
+  }
+  .skills .skills-container {
+    margin: 0;
+    padding-bottom: 5%;
+    width: 100%;
+    max-width: 90%;
+  }
+  .projects {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .projects-grid {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0;
+    padding: 2%;
+    width: 92%;
+    height: 75%;
+  }
+  .projects .projects-grid .navigation {
+    bottom: -5%;
+  }
+  .projects .text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    white-space: normal;
+    margin: 0;
+    padding: 3%;
+    text-align: center;
+  }
+  .contact {
+    width: 80%;
+    padding-bottom: 5%;
+  }
+  .contact .container {
+    height: 70%;
+  }
+  .contact .container .info .text {
+    font-size: 1.2em;
+  }
+  .contact .container .info .photo {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-me {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5% 0;
+  }
+  .about-me .image {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 25%;
+  }
+  .about-me .line {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    min-height: 0;
+    border-left: none;
+    border-bottom: #1E413F 3px solid;
+    width: 60%;
+  }
+  .about-me .text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
