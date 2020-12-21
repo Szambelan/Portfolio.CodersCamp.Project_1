@@ -6,7 +6,7 @@ Additionally I used SCSS to make it easier for read and write.
 
 **Watch preview: https://szambelan.github.io/Portfolio.CodersCamp.Project_1/**
 
-**Main things used in project**
+**Main things used in project:**
 - Box-modeling
 - Cascading and selectors CSS
 - Text stylinng
