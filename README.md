@@ -6,6 +6,8 @@ Additionally I used SCSS to make it easier for read and write.
 
 **Watch preview: https://szambelan.github.io/Portfolio.CodersCamp.Project_1/**
 
+**Firma preview: https://www.figma.com/file/JlQ3a0mB4AsO6sj5rIOYgw/Portfolio?node-id=133%3A0**
+
 **Main things used in project:**
 - Box-modeling
 - Cascading and selectors CSS
