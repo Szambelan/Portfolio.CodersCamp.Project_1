@@ -1,0 +1,24 @@
+
+// outside import
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+// variables
+@import 'variables/variables.scss';
+
+// styles for whole document
+@import 'document_styles/main_styles.scss';
+
+// components
+@import 'components/menu.scss';
+@import 'components/home.scss';
+@import 'components/about_me.scss';
+@import 'components/skills.scss';
+@import 'components/projects.scss';
+@import 'components/contact.scss';
+@import 'components/footer.scss';
+
+// animations
+@import 'animations/keyframes.scss';
+
+// responsivity
+@import 'responsivity/media_query.scss';

@@ -1,0 +1,28 @@
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/bg-image.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 35em;
+    overflow: hidden;
+    color: $second-font-color;
+    position: relative;
+
+    .content {
+        position: absolute;
+        bottom: 5%;
+        left: 4%;
+        font-size: 2em;
+        animation: appearing;
+        animation-duration: 2s;
+
+        .media {
+            padding-top: 5px;
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                cursor: pointer;
+            }
+        }
+    }
+}
